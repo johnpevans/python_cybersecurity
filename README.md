@@ -1,8 +1,9 @@
+## **DRAFT**
 # Udemy: Cyber Security - Python and Web Applications
 
-This course is taught by Mashrur Hossain and Evgeny Rahman on [Udemy](https://www.udemy.com/course/cyber-security-python-web-applications/). It is a only a good course if you are prepared to go beyond the course material to adapt it to your workflow and setup. For instance I didn't use the repl as in the videos, I used Atom and GitBash to run the scripts and I had to figure out why things weren't working which is more of a beneficial exercise as you are learning more than the material provided.
+This course is taught by Mashrur Hossain and Evgeny Rahman on [Udemy](https://www.udemy.com/course/cyber-security-python-web-applications/). It's a good course if you are prepared to go beyond the course material to adapt it to your workflow and setup. For instance I didn't use the repl as in the videos, I used Atom and GitBash to run the scripts and I had to figure out why things weren't working which is more of a beneficial exercise as you are learning more than the material provided.
 
-The course itself doesn't go into much detail on the actual scripting. It kind of just shows you what they do and you have to go off and reconfigure it to your own needs.
+The course itself doesn't go into much detail on the actual scripting. It kind of just shows you what they do and you have to go off and reconfigure it to your own needs. I have a lot of files from the course in *.gitignore* because there are a lot of projects in the tutorials and I wanted to showcase those that made an impact on me and secondly, out of respect for the authors I didn't want to showcase their entire course in my Git repo. If you are interested in learning more about those not uploaded go check our their course in the link above.
 
 ## Requirements
 scapy
@@ -32,3 +33,34 @@ I imported scapy so I could ensure that I was getting a more verbose response be
 
 Resources:
 [How to manage wireless networks using Command Prompt in Windows 10](https://www.windowscentral.com/how-manage-wireless-networks-using-command-prompt-windows-10)
+
+
+### Log Analyzer
+
+I completed this project as a report, because any log analysis would really be called using CLI. For instance, if I was to search for plain text passwords or passwords in a log file I would use the command:
+
+```
+ cat log_analyzer/original.log | grep 'password'| awk '{print$7}'
+```
+
+If I were to generate a report into a text file for myself or a supervisor than I could do:
+
+```
+ cat log_analyzer/original.log | grep 'password'| awk '{print$7}' > log_analyzer.txt
+```
+
+However, I think that it might be better to use Python to clean the data and make it more presentable. Even prep the data for a CSV. There are a lot of things you could do with the information, which is why I appreciated the freedom that this exercise gave. For instance, I originally submitted the project with the following code:
+
+```
+with open('log_analyzer/passcodes.txt', 'a') as write_log:
+write_log.write('username,password,'+username +','+passphrase+',')
+```
+This was to be able to write the information to a text file and append that file as needed.
+
+
+
+Reference:
+
+https://developers.google.com/search/reference/robots_txt
+
+last updated 5/3/2020
