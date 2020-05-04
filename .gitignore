@@ -2,7 +2,4 @@ venv/
 web_reconn/
 antivirus/
 password_checker/
-botnets.py
-code_exploit.py
-forensic.py
-port_scanning.py
+ignore/
