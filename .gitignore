@@ -2,7 +2,9 @@ venv/
 web_reconn/
 antivirus/
 password_checker/
+html_parser/
 botnets.py
 code_exploit.py
 forensic.py
 port_scanning.py
+sample.py
