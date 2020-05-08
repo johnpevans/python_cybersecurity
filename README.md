@@ -1,9 +1,9 @@
 ## **DRAFT**
 # Udemy: Cyber Security - Python and Web Applications
 
-This course is taught by Mashrur Hossain and Evgeny Rahman on [Udemy](https://www.udemy.com/course/cyber-security-python-web-applications/). It's a good course if you are prepared to go beyond the course material to adapt it to your workflow and setup. For instance I didn't use the repl as in the videos, I used Atom and GitBash to run the scripts and I had to figure out why things weren't working which is more of a beneficial exercise as you are learning more than the material provided.
+This course is taught by Mashrur Hossain and Evgeny Rahman on [Udemy](https://www.udemy.com/course/cyber-security-python-web-applications/). It's a very good course if you are prepared to go beyond the course material to adapt it to your workflow and setup. For instance I didn't use the repl as in the videos, I used Atom and GitBash to run the scripts and I had to figure out why things weren't working which is more of a beneficial exercise as you are learning more than the material provided. The course itself has a lot of great tips and tricks woven in and I really recommend taking it.  
 
-The course itself doesn't go into much detail on the actual scripting. It kind of just shows you what they do and you have to go off and reconfigure it to your own needs. I have a lot of files from the course in *.gitignore* because there are a lot of projects in the tutorials and I wanted to showcase those that made an impact on me and secondly, out of respect for the authors I didn't want to showcase their entire course in my Git repo. If you are interested in learning more about those not uploaded go check our their course in the link above.
+I have a lot of files from the course in *.gitignore* because there are a lot of projects in the tutorials and I wanted to showcase those that made an impact on me and secondly, out of respect for the authors I didn't want to showcase their entire course in my Git repo. If you are interested in learning more about those not uploaded go check our their course in the link above.
 
 ## Requirements
 scapy
@@ -49,7 +49,7 @@ If I were to generate a report into a text file for myself or a supervisor than 
  cat log_analyzer/original.log | grep 'password'| awk '{print$7}' > log_analyzer.txt
 ```
 
-However, I think that it might be better to use Python to clean the data and make it more presentable. Even prep the data for a CSV. There are a lot of things you could do with the information, which is why I appreciated the freedom that this exercise gave. For instance, I originally submitted the project with the following code:
+This is why I decided that it might be better to use Python to clean the data and make a more readable report. There are a lot of things you could do with the information, which is why I appreciated the freedom that this exercise gave. For instance, I originally submitted the project with the following code:
 
 ```
 with open('log_analyzer/passcodes.txt', 'a') as write_log:
