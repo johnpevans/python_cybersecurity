@@ -1,4 +1,3 @@
-## **DRAFT**
 # Udemy: Cyber Security - Python and Web Applications
 
 This course is taught by Mashrur Hossain and Evgeny Rahman on [Udemy](https://www.udemy.com/course/cyber-security-python-web-applications/). It's a very good course if you are prepared to go beyond the course material to adapt it to your workflow and setup. For instance I didn't use the repl as in the videos, I used Atom and GitBash to run the scripts and I had to figure out why things weren't working which is more of a beneficial exercise as you are learning more than the material provided. The course itself has a lot of great tips and tricks woven in and I really recommend taking it.  
@@ -6,8 +5,7 @@ This course is taught by Mashrur Hossain and Evgeny Rahman on [Udemy](https://ww
 I have a lot of files from the course in *.gitignore* because there are a lot of projects in the tutorials and I wanted to showcase those that made an impact on me and secondly, out of respect for the authors I didn't want to showcase their entire course in my Git repo. If you are interested in learning more about those not uploaded go check our their course in the link above.
 
 ## Requirements
-scapy
-npcap
+Used a virtual environment to install certain libraries. Please see requirements.txt.
 
 ### network_traffic.py
 
@@ -57,10 +55,12 @@ write_log.write('username,password,'+username +','+passphrase+',')
 ```
 This was to be able to write the information to a text file and append that file as needed.
 
+### Encryption
 
+Module walks student through creating a program to encrypt a password. 
 
 Reference:
 
 https://developers.google.com/search/reference/robots_txt
 
-last updated 5/3/2020
+last updated 5/8/2020
